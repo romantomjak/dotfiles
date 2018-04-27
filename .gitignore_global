@@ -1,0 +1,29 @@
+*~
+*.log
+
+# OSX
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# git credential file
+.gitconfig.local
+
+# python
+__pycache__
+*.py[cod]
+*$py.class
+.tox
+.env
+.venv
+
+# pycharm
+.idea
+
+# redis
+*.rdb
+
+# no thx
+node_modules
+npm-debug.log
+

@@ -1,0 +1,16 @@
+[core]
+	excludesfile = ~/.gitignore_global
+
+# push easily. http://stackoverflow.com/a/23918418/89484
+[push]
+    default = current
+
+# use separate file for email, github token, etc
+[include]
+    path = ~/.gitconfig.local
+
+[fetch]
+    prune = true
+
+[log]
+	date = relative
