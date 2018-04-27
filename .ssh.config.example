@@ -1,6 +1,6 @@
 # tcp/ssh keepalives
 Host *
-  Compression yes
-  TCPKeepAlive yes
-  ServerAliveInterval 20
-  ServerAliveCountMax 10
+    Compression yes
+    TCPKeepAlive yes
+    ServerAliveInterval 20
+    ServerAliveCountMax 10

@@ -10,4 +10,4 @@ Roman's dotfiles and scripts
 $ zip -e archive.zip filetoprotect.txt
 ```
 
-To zip a folder - add `-r`.
+To zip a folder add `-r`.
