@@ -8,6 +8,7 @@ ln -s $PWD/.bash_profile $HOME/.bash_profile
 ln -s $PWD/.gitconfig $HOME/.gitconfig
 ln -s $PWD/.gitignore_global $HOME/.gitignore_global
 ln -s $PWD/.vimrc $HOME/.vimrc
+ln -s $PWD/.sublime-settings "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
 
 # virtualenvwrapper
 mkdir $HOME/.virtualenvs

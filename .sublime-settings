@@ -1,0 +1,72 @@
+{
+    // Always visualise the viewport on the minimap, as opposed to only
+    // showing it on mouse over
+	"always_show_minimap_viewport": true,
+
+    // By default, auto complete will commit the current completion on enter.
+    // This setting can be used to make it complete on tab instead.
+    // Completing on tab is generally a superior option, as it removes
+    // ambiguity between committing the completion and inserting a newline.
+	"auto_complete_commit_on_tab": false,
+
+    // Controls if auto complete is shown when snippet fields are active.
+    // Only relevant if auto_complete_commit_on_tab is true.
+	"auto_complete_with_fields": true,
+
+    // Show folders in the side bar in bold
+	"bold_folder_labels": true,
+
+    // Sets the colors used within the text area
+	"color_scheme": "Packages/Theme - Dark Material/schemes/Dark-Material.tmTheme",
+
+    // Set to true to draw a border around the visible rectangle on the minimap.
+    // The color of the border will be determined by the "minimapBorder" key in
+    // the color scheme
+	"draw_minimap_border": true,
+    
+	"font_size": 12,
+
+    // If enabled, will highlight any line with a caret
+	"highlight_line": true,
+
+    // Controls how the indent guides are drawn, valid options are
+    // "draw_normal" and "draw_active". draw_active will draw the indent
+    // guides containing the caret in a different color.
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+
+    // Additional spacing at the bottom of each line, in pixels
+	"line_padding_bottom": 3,
+
+    // Additional spacing at the top of each line, in pixels
+	"line_padding_top": 3,
+
+    // Valid values are "system", "enabled" and "disabled"
+	"overlay_scroll_bars": "enabled",
+
+    // Set to false to disable scrolling past the end of the buffer.
+    // On OS X, this value is overridden in the platform specific settings, so
+    // you'll need to place this line in your user settings to override it.
+	"scroll_past_end": true,
+
+    // By default, shift+tab will only unindent if the selection spans
+    // multiple lines. When pressing shift+tab at other times, it'll insert a
+    // tab character - this allows tabs to be inserted when tab_completion is
+    // enabled. Set this to true to make shift+tab always unindent, instead of
+    // inserting tabs.
+	"shift_tab_unindent": true,
+
+    // Show the full path to files in the title bar.
+    // On OS X, this value is overridden in the platform specific settings, so
+    // you'll need to place this line in your user settings to override it.
+	"show_full_path": true,
+
+    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
+	"theme": "One Dark.sublime-theme",
+
+    // Set to true to insert spaces when tab is pressed
+	"translate_tabs_to_spaces": true
+}
