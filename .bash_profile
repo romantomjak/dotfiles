@@ -27,4 +27,4 @@ complete -F _ssh_autocomplete ssh
 export EDITOR='vim'
 
 # load other dotfiles
-source .bash_aliases
+source $HOME/.bash_aliases
