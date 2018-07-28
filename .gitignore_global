@@ -16,9 +16,14 @@ __pycache__
 .tox
 .env
 .venv
+.eggs
+.coverage
 
 # pycharm
 .idea
+
+# sublime
+*.sublime-project
 
 # redis
 *.rdb
@@ -27,3 +32,5 @@ __pycache__
 node_modules
 npm-debug.log
 
+# ansible
+.retry
