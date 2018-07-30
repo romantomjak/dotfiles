@@ -49,3 +49,6 @@ export EDITOR='vim'
 
 # load other dotfiles
 source $HOME/.bash_aliases
+
+# python
+export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
