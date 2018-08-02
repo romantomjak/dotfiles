@@ -3,6 +3,7 @@ git clone https://github.com/vim-airline/vim-airline $HOME/.vim/pack/dist/start/
 git clone https://github.com/airblade/vim-gitgutter $HOME/.vim/pack/dist/start/vim-gitgutter
 git clone https://github.com/scrooloose/nerdtree.git $HOME/.vim/pack/dist/start/nerdtree
 git clone https://github.com/junegunn/fzf.vim $HOME/.vim/pack/dist/start/fzf.vim
+git clone https://github.com/nvie/vim-flake8 $HOME/.vim/pack/dist/start/vim-flake8
 
 # aliases
 ln -s $PWD/.bash_aliases $HOME/.bash_aliases
