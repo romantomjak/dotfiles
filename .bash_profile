@@ -52,3 +52,11 @@ source $HOME/.bash_aliases
 
 # python
 export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
+
+# ripgrep
+# --files list files, but do not search them
+# --no-ignore do not respect .gitignore
+# --hidden search hidden files and folders
+# --follow follow symlinks
+# --glob additional options (ignore .git/)
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
