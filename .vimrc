@@ -59,3 +59,9 @@ set rtp+=/usr/local/opt/fzf
 
 " Create a shortcut for :Files command. <leader> is normally the '\' key
 nnoremap <leader>f :Files<cr>
+
+" Define a custom :Find command to search file content
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+
+" Map the :Find to \p
+nnoremap <leader>p :Find<cr>
