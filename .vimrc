@@ -57,11 +57,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Add fzf to Vim's runtimepath. This adds the :Files command
 set rtp+=/usr/local/opt/fzf
 
-" Create a shortcut for :Files command. <leader> is normally the '\' key
-nnoremap <leader>f :Files<cr>
+" Make CTRL+F execute :Files command
+nnoremap <C-f> :Files<cr>
 
 " Define a custom :Find command to search file content
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 
-" Map the :Find to \p
-nnoremap <leader>p :Find<cr>
+" Make CTRL+P execute :Find aka rg aka 'poor mans symbol search'
+nnoremap <C-p> :Find<cr>
