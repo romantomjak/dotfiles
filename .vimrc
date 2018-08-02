@@ -54,5 +54,8 @@ map <C-n> :NERDTreeToggle<CR>
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Add fzf to Vim's runtimepath
+" Add fzf to Vim's runtimepath. This adds the :Files command
 set rtp+=/usr/local/opt/fzf
+
+" Create a shortcut for :Files command. <leader> is normally the '\' key
+nnoremap <leader>f :Files<cr>
