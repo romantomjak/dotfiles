@@ -53,6 +53,11 @@ source $HOME/.bash_aliases
 # python
 export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
 
+# git autocomplete (for git bundled with command-line tools) 
+if [ -f `xcode-select -p`/usr/share/git-core/git-completion.bash ]; then
+    . `xcode-select -p`/usr/share/git-core/git-completion.bash
+fi
+
 # ripgrep
 # --files list files, but do not search them
 # --no-ignore do not respect .gitignore
