@@ -4,6 +4,8 @@ Roman's dotfiles and scripts
 
 ---
 
+Make sure you install Python 3 before running this.
+
 ## Zip a file and set a password
 
 ```shell

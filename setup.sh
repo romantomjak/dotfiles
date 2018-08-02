@@ -23,3 +23,6 @@ cp .ssh.config.example $HOME/.ssh/config
 # brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install wget ffmpeg nmap fzf ripgrep
+
+# pip
+pip3 install requests flake8
