@@ -18,6 +18,10 @@ __pycache__
 .venv
 .eggs
 .coverage
+*.egg-info/
+build/
+dist/
+.pytest_cache/
 
 # pycharm
 .idea
