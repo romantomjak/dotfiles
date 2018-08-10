@@ -5,9 +5,11 @@
 [push]
     default = current
 
-# use separate file for email, github token, etc
-[include]
-    path = ~/.gitconfig.local
+# email address privacy
+# https://help.github.com/articles/setting-your-commit-email-address-on-github/
+[user]
+    name = Roman Tomjak
+    email = 6570684+romantomjak@users.noreply.github.com
 
 [fetch]
     prune = true
