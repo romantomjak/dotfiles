@@ -16,9 +16,9 @@ ln -s $PWD/.sublime-settings "$HOME/Library/Application Support/Sublime Text 3/P
 # virtualenvwrapper
 mkdir $HOME/.virtualenvs
 
-# ssh
-mkdir $HOME/.ssh
-cp .ssh.config.example $HOME/.ssh/config
+# ssh config
+[ -d $HOME/.ssh ] || mkdir $HOME/.ssh
+[ -f $HOME/.ssh/config ] || cp .ssh.config.example $HOME/.ssh/config
 
 # brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
