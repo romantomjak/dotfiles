@@ -11,8 +11,8 @@ set autoread
 " :W sudo saves the file - usefeul when you get the permission denied error
 command W w !sudo tee % > /dev/null
 
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+" Set 8 lines to the cursor - when moving vertically using j/k
+set so=8
 
 " Always show current position
 set ruler
