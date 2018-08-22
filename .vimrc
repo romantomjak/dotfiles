@@ -57,11 +57,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Add fzf to Vim's runtimepath. This adds the :Files command
 set rtp+=/usr/local/opt/fzf
 
+" Define a custom :Files command to search file names
+command! -bang -nargs=* Files call fzf#vim#grep('rg --files --no-ignore --ignore-case --hidden --follow --glob "!.git/" --glob "!.pytest_cache/" --glob "!*__pycache__*" --glob "!.eggs/" --glob "!*.egg-info/" . '.shellescape(<q-args>), 1, <bang>0)
+
 " Make CTRL+F execute :Files command
 nnoremap <C-f> :Files<cr>
 
 " Define a custom :Find command to search file content
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always" --glob "!.git/" --glob "!.pytest_cache/" --glob "!*__pycache__*" --glob "!.eggs/" --glob "!*.egg-info/" --glob "!.coverage" '.shellescape(<q-args>), 1, <bang>0)
 
 " Make CTRL+P execute :Find aka rg aka 'poor mans symbol search'
 nnoremap <C-p> :Find<cr>
