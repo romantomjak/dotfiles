@@ -26,4 +26,4 @@ mkdir $HOME/.virtualenvs
 brew install wget ffmpeg nmap fzf ripgrep tmux hugo
 
 # pip
-pip3 install requests flake8
+pip3 install requests flake8 ansible passlib
