@@ -3,7 +3,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # virtualenvwrapper
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+    VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
     WORKON_HOME=$HOME/.virtualenvs
     source /usr/local/bin/virtualenvwrapper.sh
 fi
