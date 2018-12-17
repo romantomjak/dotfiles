@@ -12,6 +12,10 @@ fi
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
+# npm
+export NPM_CONFIG_PREFIX=$HOME/.npm
+export PATH=$NPM_CONFIG_PREFIX/bin:$PATH
+
 # ssh autocomplete
 function _ssh_autocomplete() {
     COMPREPLY=()
