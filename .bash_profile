@@ -71,3 +71,6 @@ fi
 # --glob additional options (ignore .git/)
 export FZF_DEFAULT_COMAND="rg --files --no-ignore --ignore-case --hidden --follow --glob '!.git/' --glob '!.pytest_cache/' --glob '!*__pycache__*' --glob '!.eggs/' --glob '!*.egg-info/'"
 
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
