@@ -75,5 +75,10 @@ export FZF_DEFAULT_COMAND="rg --files --no-ignore --ignore-case --hidden --follo
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/romantomjak/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH
 
+# Use OpenSSL when building software
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
