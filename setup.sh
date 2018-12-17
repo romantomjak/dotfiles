@@ -23,7 +23,7 @@ mkdir $HOME/.virtualenvs
 
 # brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install wget ffmpeg nmap fzf ripgrep tmux hugo
+brew install wget ffmpeg nmap fzf ripgrep tmux hugo postgresql kubernetes-cli wrk telnet
 
 # pip
 pip3 install requests flake8 ansible passlib
