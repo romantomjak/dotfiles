@@ -65,7 +65,9 @@ fi
 # ripgrep
 # --files list files, but do not search them
 # --no-ignore do not respect .gitignore
+# --ignore-case search case sensitively.
 # --hidden search hidden files and folders
 # --follow follow symlinks
 # --glob additional options (ignore .git/)
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+export FZF_DEFAULT_COMAND="rg --files --no-ignore --ignore-case --hidden --follow --glob '!.git/' --glob '!.pytest_cache/' --glob '!*__pycache__*' --glob '!.eggs/' --glob '!*.egg-info/'"
+
