@@ -72,5 +72,8 @@ fi
 export FZF_DEFAULT_COMAND="rg --files --no-ignore --ignore-case --hidden --follow --glob '!.git/' --glob '!.pytest_cache/' --glob '!*__pycache__*' --glob '!.eggs/' --glob '!*.egg-info/'"
 
 
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/romantomjak/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH
+
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
