@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # List all files colorized in long format, including dot files
 alias ls='ls -AaGhl'
 

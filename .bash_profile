@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # preferred editor
 export EDITOR='vim'
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # SSH
 function _ssh_autocomplete() {
     COMPREPLY=()
