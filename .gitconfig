@@ -1,5 +1,5 @@
 [core]
-    excludesfile = ~/.gitignore_global
+	excludesfile = /Users/romantomjak/.gitignore_global
 
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
@@ -8,11 +8,19 @@
 # email address privacy
 # https://help.github.com/articles/setting-your-commit-email-address-on-github/
 [user]
-    name = Roman Tomjak
-    email = 6570684+romantomjak@users.noreply.github.com
+	name = Roman Tomjak
+	email = 6570684+romantomjak@users.noreply.github.com
 
 [fetch]
     prune = true
 
 [log]
     date = relative
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/romantomjak/.stCommitMsg
