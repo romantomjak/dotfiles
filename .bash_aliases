@@ -1,12 +1,24 @@
-alias ls='ls -AGhl'
+# List all files colorized in long format, including dot files
+alias ls='ls -AaGhl'
 
+# Easier navigation
 alias ..='cd ..'
 
+# Always enable colored `grep` output
+alias grep='grep --color=auto '
+
+# Hosts file
 alias hosts='sudo $EDITOR /etc/hosts'
 
+# IP address
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 
+# Sublime
 alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+# mDNSResponder
+# https://help.dreamhost.com/hc/en-us/articles/214981288-Flushing-your-DNS-cache-in-Mac-OS-X-and-Linux
+alias mdnsresponder_restart='sudo killall -HUP mDNSResponder'
 
 # https://github.com/django/django/blob/d7b2aa24f75434c2ce50100cfef3586071e0747a/django/utils/crypto.py#L69
 alias django-secret-key='python3 -c "import random; chars = \"abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)\"; print(\"\".join(random.SystemRandom().choice(chars) for _ in range(50)))"'
@@ -15,3 +27,15 @@ alias django-secret-key='python3 -c "import random; chars = \"abcdefghijklmnopqr
 # https://stackoverflow.com/a/34659332/758384
 alias openports='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# Get week number
+alias week='date +%V'
+
+# Unix Time Stamp
+alias timestamp='date -u "+%s"'
+
+# Add an "alert" alias for long running commands
+# sleep 1; alert
+alias alert='osascript -e "display notification \"$(history|tail -n1|sed -E '\''s/^[[:space:]]+[0-9]+[[:space:]]+//;s/[;&|][[:space:]]*alert$//'\'')\" with title \"Terminal\""'
