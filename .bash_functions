@@ -1,0 +1,5 @@
+# Useful bash aliases
+# https://news.ycombinator.com/item?id=18898523
+function cheat() {
+   curl cht.sh/$1
+}

@@ -1,0 +1,44 @@
+# SSH
+function _ssh_autocomplete() {
+    COMPREPLY=()
+    CURRENT_WORD="${COMP_WORDS[COMP_CWORD]}"
+    if [[ ${CURRENT_WORD} == -* || ${COMP_CWORD} -eq 1 ]] ; then
+        WORD_LIST=$(sed -nE "s/Host\ ([a-zA-Z0-9].+)/\1/p" ~/.ssh/config | tr '\n' ' ' )
+        COMPREPLY=( $(compgen -W "$WORD_LIST" -- ${CURRENT_WORD}) )
+    fi
+}
+complete -F _ssh_autocomplete ssh
+
+# Makefile
+function _makefile_targets {
+    local curr_arg;
+    local targets;
+
+    # Find makefile targets available in the current directory
+    targets=''
+    if [[ -e "$(pwd)/Makefile" ]]; then
+        targets=$( \
+            grep -oE '^[a-zA-Z0-9_-]+:' Makefile \
+            | sed 's/://' \
+            | tr '\n' ' ' \
+        )
+    fi
+
+    # Filter targets based on user input to the bash completion
+    curr_arg=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "${targets[@]}" -- $curr_arg ) );
+}
+complete -F _makefile_targets make
+
+# git autocomplete (for git bundled with command-line tools) 
+if [ -f `xcode-select -p`/usr/share/git-core/git-completion.bash ]; then
+    . `xcode-select -p`/usr/share/git-core/git-completion.bash
+fi
+
+# HashiCorp
+complete -C /usr/local/bin/nomad nomad
+complete -C /usr/local/bin/consul consul
+complete -C /usr/local/bin/vault vault
+
+# Heroku
+HEROKU_AC_BASH_SETUP_PATH=/Users/romantomjak/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH
