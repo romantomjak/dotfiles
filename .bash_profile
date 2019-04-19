@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# golang
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
 # preferred editor
 export EDITOR='vim'
 
