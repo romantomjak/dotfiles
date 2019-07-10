@@ -48,6 +48,10 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" Show all whitespace and line continuation characters
+set showbreak=↪\
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨,tab:▸\ ,space:␣
+
 " NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>
 
