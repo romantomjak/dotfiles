@@ -47,9 +47,6 @@ export FZF_DEFAULT_COMAND="rg --files --no-ignore --ignore-case --hidden --follo
 export VAULT_ADDR=http://127.0.0.1:8200
 export NOMAD_ADDR=http://127.0.0.1:4646
 export CONSUL_HTTP_ADDR=127.0.0.1:8500
-complete -C /usr/local/bin/nomad nomad
-complete -C /usr/local/bin/consul consul
-complete -C /usr/local/bin/vault vault
 
 # load other dotfiles
 source $HOME/.bash_aliases
