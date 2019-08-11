@@ -15,8 +15,9 @@ alias hosts='sudo $EDITOR /etc/hosts'
 # IP address
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 
-# Sublime
+# Editors
 alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias vscode='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
 
 # mDNSResponder
 # https://help.dreamhost.com/hc/en-us/articles/214981288-Flushing-your-DNS-cache-in-Mac-OS-X-and-Linux
