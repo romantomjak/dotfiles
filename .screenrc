@@ -1,0 +1,6 @@
+# don't display the copyright page
+startup_message off
+
+# enable mouse scrolling in screen sessions
+termcapinfo xterm* ti@:te@
+
