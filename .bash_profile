@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# bash promt with time
+export PS1="\t \h:\W \u\\$ "
+
 # golang
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
