@@ -1,7 +1,39 @@
-#!/bin/bash
+#!/bin/zsh
+#
+# .zshenv - every time
+# .zprofile - at login
+# .zshrc - when interactive
+# .zlogin - at login
+# .zlogout - at logout
+# 
+# https://unix.stackexchange.com/a/487889/7549
 
-# bash promt with time
-export PS1="\t \h:\W \u\\$ "
+# promt with time
+# http://www.nparikh.org/unix/prompt.php#zsh
+export PS1='%* %m:%1~ %# '
+
+# save more commands in history
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTSIZE=5000
+SAVEHIST=2000
+
+# share history across multiple zsh sessions
+setopt SHARE_HISTORY
+
+# append to history
+setopt APPEND_HISTORY
+
+# expire duplicates first
+setopt HIST_EXPIRE_DUPS_FIRST 
+
+# do not store duplications
+setopt HIST_IGNORE_DUPS
+
+#ignore duplicates when searching
+setopt HIST_FIND_NO_DUPS
+
+# removes blank lines from history
+setopt HIST_REDUCE_BLANKS
 
 # golang
 export GOPATH=$HOME/go
@@ -52,9 +84,9 @@ export NOMAD_ADDR=http://127.0.0.1:4646
 export CONSUL_HTTP_ADDR=127.0.0.1:8500
 
 # load other dotfiles
-source $HOME/.bash_aliases
-source $HOME/.bash_functions
-source $HOME/.bash_autocomplete
-if [ -f $HOME/.bash_secrets ]; then
-    source $HOME/.bash_secrets
+source $HOME/.zsh_aliases
+source $HOME/.zsh_functions
+source $HOME/.zsh_autocomplete
+if [ -f $HOME/.zsh_secrets ]; then
+    source $HOME/.zsh_secrets
 fi

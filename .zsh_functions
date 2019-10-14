@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Useful bash aliases
 # https://news.ycombinator.com/item?id=18898523

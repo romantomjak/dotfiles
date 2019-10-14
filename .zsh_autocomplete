@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/bin/zsh
+
+# init zsh autocomplete
+autoload -Uz compinit bashcompinit
+compinit
+
+# enable bash autocomplete
+bashcompinit
 
 # SSH
 function _ssh_autocomplete() {
@@ -33,22 +40,19 @@ function _makefile_targets {
 complete -F _makefile_targets make
 
 # git autocomplete (for git bundled with command-line tools) 
-if [ -f `xcode-select -p`/usr/share/git-core/git-completion.bash ]; then
-    . `xcode-select -p`/usr/share/git-core/git-completion.bash
-fi
+# if [ -f `xcode-select -p`/usr/share/git-core/git-completion.zsh ]; then
+#     . `xcode-select -p`/usr/share/git-core/git-completion.zsh
+# fi
 
 # HashiCorp
-complete -C /usr/local/bin/nomad nomad
-complete -C /usr/local/bin/consul consul
-complete -C /usr/local/bin/vault vault
-
-# Heroku
-HEROKU_AC_BASH_SETUP_PATH=/Users/romantomjak/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH
+complete -o nospace  -C /usr/local/bin/nomad nomad
+complete -o nospace  -C /usr/local/bin/consul consul
+complete -o nospace  -C /usr/local/bin/vault vault
 
 # Docker
-if [ -f /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion ]; then
-    . /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion ]; then
+    . /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion
 fi
-if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion ]; then
-    . /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ]; then
+    . /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
 fi

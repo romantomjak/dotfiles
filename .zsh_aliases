@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # List all files colorized in long format, including dot files
 alias ls='ls -AaGhl'
@@ -37,7 +37,8 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias week='date +%V'
 
 # Unix Time Stamp
-alias timestamp='date -u "+%s"'
+alias unixtimestamp='date -u "+%s"'
+alias timestamp=unixtimestamp
 
 # Add an "alert" alias for long running commands
 # sleep 1; alert
