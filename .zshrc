@@ -1,16 +1,14 @@
 #!/bin/zsh
 #
-# .zshenv - every time
-# .zprofile - at login
-# .zshrc - when interactive
-# .zlogin - at login
-# .zlogout - at logout
-# 
+# Supposedly, .zprofile executes once at login and .zshrc for interactive
+# shells, but on macOS all of these files will be executed for new Terminal
+# tabs, so for the sake of simplicity - everything is defined here.
+#
 # https://unix.stackexchange.com/a/487889/7549
 
 # promt with time
 # http://www.nparikh.org/unix/prompt.php#zsh
-export PS1='%* %m:%1~ %# '
+export PS1='%* %m %1~ %# '
 
 # save more commands in history
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
