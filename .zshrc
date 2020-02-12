@@ -44,7 +44,7 @@ export EDITOR='vim'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # python
-export PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH
+export PATH=/Library/Frameworks/Python.framework/Versions/3.8/bin:$PATH
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
     WORKON_HOME=$HOME/.virtualenvs
