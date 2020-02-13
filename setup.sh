@@ -14,6 +14,7 @@ ln -s $PWD/.gitconfig $HOME/.gitconfig
 ln -s $PWD/.gitignore_global $HOME/.gitignore_global
 ln -s $PWD/.vimrc $HOME/.vimrc
 ln -s $PWD/.sublime-settings "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+ln -s $PWD/vs-code-settings "$HOME/Library/Application Support/Code/User/settings.json"
 ln -s $PWD/.tmux.conf $HOME/.tmux.conf
 ln -s $PWD/.screenrc $HOME/.screenrc
 

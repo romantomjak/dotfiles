@@ -1,0 +1,32 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "go.testTimeout": "10s",
+    "go.formatTool": "goimports",
+    "window.restoreFullscreen": true,
+    "window.restoreWindows": "all",
+    "window.newWindowDimensions": "inherit",
+    "window.openFoldersInNewWindow": "on",
+    "workbench.colorTheme": "GitHub Plus",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.tree.indent": 16,
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "gitlens.views.repositories.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "gitlens.views.search.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/.vscode": true
+    }
+}
