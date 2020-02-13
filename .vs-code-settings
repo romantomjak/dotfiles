@@ -1,6 +1,5 @@
 {
     "telemetry.enableTelemetry": false,
-    "workbench.iconTheme": "eq-material-theme-icons-palenight",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "go.testTimeout": "10s",
@@ -28,5 +27,8 @@
         "**/__pycache__": true,
         "**/.pytest_cache": true,
         "**/.vscode": true
-    }
+    },
+    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "editor.fontSize": 13,
+    "explorer.openEditors.visible": 0
 }

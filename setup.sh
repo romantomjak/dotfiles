@@ -18,6 +18,9 @@ ln -s $PWD/vs-code-settings "$HOME/Library/Application Support/Code/User/setting
 ln -s $PWD/.tmux.conf $HOME/.tmux.conf
 ln -s $PWD/.screenrc $HOME/.screenrc
 
+# how to install vscode extensions automatically?
+# github plus theme, gitlens, go, material theme icons, python, terminal
+
 # virtualenvwrapper
 mkdir $HOME/.virtualenvs
 
