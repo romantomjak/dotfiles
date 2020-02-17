@@ -10,17 +10,25 @@
 [user]
 	name = Roman Tomjak
 	email = 6570684+romantomjak@users.noreply.github.com
+    signingkey = BB29BA0B3501D719
+
+[gpg]
+    program = /usr/local/MacGPG2/bin/gpg
 
 [fetch]
     prune = true
 
 [log]
     date = relative
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
 [commit]
 	template = /Users/romantomjak/.stCommitMsg
+    gpgsign = true
