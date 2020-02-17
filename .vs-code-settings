@@ -7,7 +7,6 @@
     "window.restoreFullscreen": true,
     "window.restoreWindows": "all",
     "window.newWindowDimensions": "inherit",
-    "window.openFoldersInNewWindow": "on",
     "workbench.colorTheme": "GitHub Plus",
     "workbench.fontAliasing": "antialiased",
     "workbench.tree.indent": 16,
@@ -30,5 +29,6 @@
     },
     "workbench.iconTheme": "eq-material-theme-icons-palenight",
     "editor.fontSize": 13,
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "go.useLanguageServer": true
 }
