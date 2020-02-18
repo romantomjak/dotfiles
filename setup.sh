@@ -33,4 +33,5 @@ mkdir $HOME/.virtualenvs
 brew install wget ffmpeg nmap fzf ripgrep tmux hugo postgresql kubernetes-cli wrk telnet
 
 # pip
-pip3 install requests flake8 ansible passlib
+# installing global packages using --user puts files into ~/Library/Python/...
+pip3 install --user requests flake8 ansible passlib virtualenv virtualenvwrapper
