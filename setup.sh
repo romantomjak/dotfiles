@@ -33,5 +33,8 @@ mkdir $HOME/.virtualenvs
 brew install wget ffmpeg nmap fzf ripgrep tmux hugo postgresql kubernetes-cli wrk telnet
 
 # pip
-# installing global packages using --user puts files into ~/Library/Python/...
+# using --user tells pip to work on current user's local python package install
+# location, rather than the system-wide one. this makes packages go into
+# ~/Library/Python/<version>/lib/python/site-packages. it also means that $PATH
+# needs to include ~/Library/Python/<version>/bin
 pip3 install --user requests flake8 ansible passlib virtualenv virtualenvwrapper
