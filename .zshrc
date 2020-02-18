@@ -44,11 +44,12 @@ export EDITOR='vim'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # python
-export PATH=/Library/Frameworks/Python.framework/Versions/3.8/bin:$PATH
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+PYTHON_VERSION=3.8
+export PATH="/Library/Frameworks/Python.framework/Versions/$PYTHON_VERSION/bin:$HOME/Library/Python/$PYTHON_VERSION/bin:$PATH"
+if [ -f $HOME/Library/Python/$PYTHON_VERSION/bin/virtualenvwrapper.sh ]; then
+    VIRTUALENVWRAPPER_PYTHON="/Library/Frameworks/Python.framework/Versions/$PYTHON_VERSION/bin/python3"
     WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
+    source $HOME/Library/Python/$PYTHON_VERSION/bin/virtualenvwrapper.sh
 fi
 
 # rust
