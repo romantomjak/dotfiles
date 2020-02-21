@@ -10,18 +10,26 @@
 # http://www.nparikh.org/unix/prompt.php#zsh
 export PS1='%* %m %1~ %# '
 
-# save more commands in history
+# where to save the history when shell exits
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
-HISTSIZE=5000
-SAVEHIST=2000
+
+# maximum number of events stored in the internal history list.
+# setting this value larger than the SAVEHIST will give you the
+# difference as a cushion for saving duplicated history events
+HISTSIZE=5500
+
+# maximum number of history events to save in the history file
+SAVEHIST=5000
 
 # append to history
 setopt APPEND_HISTORY
 
-# expire duplicates first
+# expire duplicates first if the internal history needs to be
+# trimmed to add the current command
 setopt HIST_EXPIRE_DUPS_FIRST 
 
-# do not store duplications
+# do not add commands to the history if they are duplicates of
+# the previous command
 setopt HIST_IGNORE_DUPS
 
 # ignore duplicates when searching
