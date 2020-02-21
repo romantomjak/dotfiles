@@ -43,3 +43,5 @@ alias timestamp=unixtimestamp
 # Add an "alert" alias for long running commands
 # sleep 1; alert
 alias alert='osascript -e "display notification \"$(history|tail -n1|sed -E '\''s/^[[:space:]]+[0-9]+[[:space:]]+//;s/[;&|][[:space:]]*alert$//'\'')\" with title \"Terminal\""'
+
+alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
