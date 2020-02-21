@@ -15,9 +15,6 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=5000
 SAVEHIST=2000
 
-# share history across multiple zsh sessions
-setopt SHARE_HISTORY
-
 # append to history
 setopt APPEND_HISTORY
 
