@@ -39,3 +39,6 @@ npm-debug.log
 
 # ansible
 .retry
+
+# VSCode
+.vscode
