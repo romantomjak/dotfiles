@@ -1,6 +1,19 @@
-# tcp/ssh keepalives
+# defaults for all hosts
 Host *
-    Compression yes
-    TCPKeepAlive yes
-    ServerAliveInterval 20
-    ServerAliveCountMax 10
+
+  # speeds up file transfers when available
+  Compression yes
+
+  # send TCP keepalives to the other side so that connection deaths are
+  # properly noticed by the either side
+  TCPKeepAlive yes
+
+  # number server alive messages which may be sent without receiving any
+  # messages back from the server. If, for example, ServerAliveInterval is
+  # set to 10 and ServerAliveCountMax to 3, if the server becomes unresponsive,
+  # ssh will disconnect after approximately 30 seconds
+  ServerAliveCountMax 3
+
+  # interval in seconds after which if no data has been received from the 
+  # server, ssh will send a message to request a response from the server
+  ServerAliveInterval 10
