@@ -1,6 +1,21 @@
 # defaults for all hosts
 Host *
 
+  # do not attempt public key authentication. when ssh is authenticating
+  # via a public key, it sends the server all your public keys, one by one
+  # until the server accepts one. this can be used to determine your identity
+  PubkeyAuthentication no
+
+  # force ssh to use identity files configured in ssh_config files.
+  # this is used together with PubkeyAuthentication to form the following
+  # ssh client configuration:
+  #
+  # Host example.com
+  #   PubkeyAuthentication yes
+  #   IdentityFile ~/.ssh/id_rsa
+  #
+  IdentitiesOnly yes
+
   # speeds up file transfers when available
   Compression yes
 
