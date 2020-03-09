@@ -1,4 +1,4 @@
-# defaults for all hosts. must be at the end of the ssh_config file
+# defaults for all other hosts. this must be at the end of the ssh_config file
 Host *
 
   # do not attempt public key authentication. when ssh is authenticating
