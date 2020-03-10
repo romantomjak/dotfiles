@@ -47,3 +47,7 @@ alias alert='osascript -e "display notification \"$(history|tail -n1|sed -E '\''
 
 # Lowercase UUID
 alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
+
+# macOS has no `md5sum`
+alias md5sum='md5'
+
