@@ -5,6 +5,8 @@
 # tabs, so for the sake of simplicity - everything is defined here.
 #
 # https://unix.stackexchange.com/a/487889/7549
+#
+# Type `man zshoptions` to see all options
 
 # promt with time
 # http://www.nparikh.org/unix/prompt.php#zsh
