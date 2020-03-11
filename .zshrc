@@ -40,6 +40,17 @@ setopt HIST_FIND_NO_DUPS
 # removes blank lines from history
 setopt HIST_REDUCE_BLANKS
 
+# on an ambiguous completion, automatically list choices when
+# the completion function is called twice in succession
+setopt BASH_AUTO_LIST
+
+# do not use menu completion after the second consecutive request for
+# completion
+setopt NO_AUTO_MENU
+
+# do not insert first completion match immediately
+setopt NO_MENU_COMPLETE
+
 # golang
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
