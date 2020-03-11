@@ -40,6 +40,9 @@ setopt HIST_FIND_NO_DUPS
 # removes blank lines from history
 setopt HIST_REDUCE_BLANKS
 
+# completions try to return to the last prompt
+setopt NO_ALWAYS_LAST_PROMPT
+
 # on an ambiguous completion, automatically list choices when
 # the completion function is called twice in succession
 setopt BASH_AUTO_LIST
