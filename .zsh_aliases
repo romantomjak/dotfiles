@@ -40,6 +40,7 @@ alias week='date +%V'
 alias unixtimestamp='date -u +"%s"'
 alias timestamp=unixtimestamp
 alias iso8601='date -u +"%Y-%m-%dT%H:%M:%SZ"'
+alias timestamptodate='date -r '
 
 # Add an "alert" alias for long running commands
 # sleep 1; alert
