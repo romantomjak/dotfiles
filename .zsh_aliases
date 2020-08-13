@@ -13,7 +13,8 @@ alias grep='grep --color=auto '
 alias hosts='sudo $EDITOR /etc/hosts'
 
 # IP address
-alias ipaddr='dig +short myip.opendns.com @resolver1.opendns.com'
+alias ipaddr='dig -4 +short myip.opendns.com a @resolver1.opendns.com'
+alias ipaddr6='dig -6 +short myip.opendns.com aaaa @resolver1.opendns.com'
 
 # Editors
 alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
