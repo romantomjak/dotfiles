@@ -10,3 +10,8 @@ function cheat() {
 function mkd() {
 	mkdir -p "$@" && cd "$_";
 }
+
+# macOS dns resolver ips from the System Configuration framework’s dynamic store
+function dns-resolvers() {
+   scutil <<<"show State:/Network/Global/DNS" | grep --color=never --only-matching --extended-regexp "([0-9]{1,3}[\.]){3}[0-9]{1,3}"
+}
