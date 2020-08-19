@@ -104,6 +104,7 @@ export NOMAD_ADDR=http://127.0.0.1:4646
 export CONSUL_HTTP_ADDR=127.0.0.1:8500
 
 # load other dotfiles
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh_aliases
 source $HOME/.zsh_functions
 source $HOME/.zsh_autocomplete

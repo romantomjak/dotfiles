@@ -1,3 +1,7 @@
+# zsh plugins
+[ -d $HOME/.zsh ] || mkdir $HOME/.zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.zsh/zsh-autosuggestions
+
 # vim plugins
 git clone https://github.com/vim-airline/vim-airline $HOME/.vim/pack/dist/start/vim-airline
 git clone https://github.com/airblade/vim-gitgutter $HOME/.vim/pack/dist/start/vim-gitgutter
