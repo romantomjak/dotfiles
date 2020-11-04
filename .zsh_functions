@@ -32,3 +32,14 @@ ISO8601 UTC timestamp    | date -u +%FT%TZ    | $(date -u +%FT%TZ)
 See also: date(1), strftime(3)
 EOT
 }
+
+# Retrieves One World Radio streams
+# These change too often and iTunes doesn't seem to like .PLS files
+# See https://oneworldradio.tomorrowland.com/multi-page/stream-links-moved
+function owr-streams() {
+    echo "One World Radio"
+    curl --silent https://playerservices.streamtheworld.com/pls/OWR_INTERNATIONAL.pls | awk '/File[0-9]=/{sub(/File[0-9]=/,"");print $1}'
+    echo
+    echo "One World Radio - Daybreak Sessions"
+    curl --silent https://playerservices.streamtheworld.com/pls/OWR_DAYBREAK.pls | awk '/File[0-9]=/{sub(/File[0-9]=/,"");print $1}'
+}
