@@ -43,3 +43,9 @@ function owr-streams() {
     echo "One World Radio - Daybreak Sessions"
     curl --silent https://playerservices.streamtheworld.com/pls/OWR_DAYBREAK.pls | awk '/File[0-9]=/{sub(/File[0-9]=/,"");print $1}'
 }
+
+# Prepends datetime to ping responses
+# Useful for longer diagnostic sessions
+function ping-datetime() {
+    ping $1 | while read line; do echo `date` - $line; done
+}
