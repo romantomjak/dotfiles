@@ -8,6 +8,7 @@ git clone https://github.com/airblade/vim-gitgutter $HOME/.vim/pack/dist/start/v
 git clone https://github.com/scrooloose/nerdtree.git $HOME/.vim/pack/dist/start/nerdtree
 git clone https://github.com/junegunn/fzf.vim $HOME/.vim/pack/dist/start/fzf.vim
 git clone https://github.com/nvie/vim-flake8 $HOME/.vim/pack/dist/start/vim-flake8
+git clone https://github.com/fatih/vim-go.git $HOME/.vim/pack/dist/start/vim-go
 
 # configuration file aliases
 ln -s $PWD/.zsh_aliases $HOME/.zsh_aliases
