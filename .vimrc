@@ -24,7 +24,7 @@ set smartcase
 " Highlight search results
 set hlsearch
 
-" Make search act like search in modern browsers
+" Show search matches as the pattern is being typed
 set incsearch
 
 " Enable syntax highlighting
@@ -47,12 +47,19 @@ set smarttab
 " 1 tab is 4 spaces
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4 
+
+" Show line numbers
+set number
+
+" Turn on spell checker
+set spell
 
 " Show all whitespace and line continuation characters
 set showbreak=↪\
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨,tab:▸\ ,space:␣
 
-" NERDTree shortcut
+" Toggle NERDTree with CTRL+n
 map <C-n> :NERDTreeToggle<CR>
 
 " Close vim if the only window left open is a NERDTree
