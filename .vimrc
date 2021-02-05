@@ -56,6 +56,17 @@ set number
 set showbreak=↪\
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨,tab:▸\ ,space:␣
 
+" Go-Vim
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_auto_type_info = 1
+let g:go_auto_sameids = 1
+
 " Toggle NERDTree with CTRL+n
 map <C-n> :NERDTreeToggle<CR>
 
