@@ -54,6 +54,10 @@ setopt NO_AUTO_MENU
 # do not insert first completion match immediately
 setopt NO_MENU_COMPLETE
 
+# bind opt+up/opt+down to search through history with a prefix
+bindkey "\e[A" history-beginning-search-backward
+bindkey "\e[B" history-beginning-search-forward
+
 # golang
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
