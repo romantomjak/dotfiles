@@ -8,10 +8,6 @@
 #
 # Type `man zshoptions` to see all options
 
-# promt with time
-# http://www.nparikh.org/unix/prompt.php#zsh
-export PS1='%* %m %1~ %# '
-
 # where to save the history when shell exits
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 
@@ -53,6 +49,9 @@ setopt NO_AUTO_MENU
 
 # do not insert first completion match immediately
 setopt NO_MENU_COMPLETE
+
+# enable parameter expansion/substitutions within promts
+setopt PROMPT_SUBST
 
 # bind opt+up/opt+down to search through history with a prefix
 bindkey "\e[A" history-beginning-search-backward
@@ -115,3 +114,7 @@ source $HOME/.zsh_autocomplete
 if [ -f $HOME/.zsh_secrets ]; then
     source $HOME/.zsh_secrets
 fi
+
+# promt with time and git branch
+# https://web.archive.org/web/20200817062905/http://nparikh.org/unix/prompt.php#zsh
+PROMPT='%* %m %1~$(__git-branch-name) %# '

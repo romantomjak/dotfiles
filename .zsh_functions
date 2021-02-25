@@ -49,3 +49,11 @@ function owr-streams() {
 function ping-datetime() {
     ping $1 | while read line; do echo `date` - $line; done
 }
+
+# Utility function for displaying git branch name in the promt
+function __git-branch-name() {
+    BRANCH=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+    if [[ -n "${BRANCH}" ]]; then
+        echo " (${BRANCH})"
+    fi
+}
