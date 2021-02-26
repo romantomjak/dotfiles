@@ -52,9 +52,9 @@ function ping-datetime() {
 
 # Utility function for displaying git branch name in the promt
 function __git-branch-name() {
-    local BRANCH=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+    local BRANCH=$(git symbolic-ref --short HEAD 2> /dev/null)
     if [ -n "${BRANCH}" ]; then
-        if [ -n "$(git status --porcelain)" ]; then
+        if [ -n "$(git status --porcelain -uno)" ]; then
             local COLOUR='%F{red}'
         else
             local COLOUR='%F{green}'
