@@ -32,3 +32,13 @@
 [commit]
 	template = /Users/romantomjak/.stCommitMsg
     gpgsign = true
+
+[alias]
+    co = checkout
+    cane = commit --amend --no-edit
+    pr = pull --rebase
+    lo = log --oneline -n 10
+    d = diff
+    s = status
+    br = branch
+    cm = commit -m
