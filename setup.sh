@@ -24,7 +24,7 @@ ln -s $PWD/.screenrc $HOME/.screenrc
 # editor configuration
 # copy configuration instead of symlinking. editors like to reorganize it, so
 # it often appears as changed when in fact it hasn't
-cp $PWD/sublime-settings "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+cp $PWD/sublime-settings "$HOME/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
 cp $PWD/vs-code-settings "$HOME/Library/Application Support/Code/User/settings.json"
 cp $PWD/vs-code-key-bindings "$HOME/Library/Application Support/Code/User/keybindings.json"
 
