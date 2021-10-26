@@ -68,7 +68,7 @@ export EDITOR='vim'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # python
-PYTHON_VERSION=3.9
+PYTHON_VERSION=3.10
 export PATH="/Library/Frameworks/Python.framework/Versions/$PYTHON_VERSION/bin:$HOME/Library/Python/$PYTHON_VERSION/bin:$PATH"
 if [ -f $HOME/Library/Python/$PYTHON_VERSION/bin/virtualenvwrapper.sh ]; then
     VIRTUALENVWRAPPER_PYTHON="/Library/Frameworks/Python.framework/Versions/$PYTHON_VERSION/bin/python3"
