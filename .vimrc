@@ -87,3 +87,12 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 
 " Make CTRL+P execute :Find aka rg aka 'poor mans symbol search'
 nnoremap <C-p> :Find<cr>
+
+" As wacky as it looks, this allows moving lines up/down with alt+j/k
+nnoremap ∆ :m .+1<CR>==
+nnoremap ķ :m .-2<CR>==
+inoremap ∆ <Esc>:m .+1<CR>==gi
+inoremap ķ <Esc>:m .-2<CR>==gi
+vnoremap ∆ :m '>+1<CR>gv=gv
+vnoremap ķ :m '<-2<CR>gv=gv
+
