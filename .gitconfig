@@ -10,7 +10,7 @@
 [user]
 	name = Roman Tomjak
 	email = 6570684+romantomjak@users.noreply.github.com
-    signingkey = BB29BA0B3501D719
+    signingkey = 98A2EDDA54CD0076
 
 [gpg]
     program = /usr/local/MacGPG2/bin/gpg
