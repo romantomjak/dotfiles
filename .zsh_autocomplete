@@ -56,3 +56,7 @@ fi
 if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ]; then
     . /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
 fi
+
+if [ -f /usr/local/bin/kubectl ]; then
+    source <(kubectl completion zsh)
+fi
