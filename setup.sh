@@ -40,7 +40,7 @@ mkdir $HOME/.virtualenvs
 [ -f $HOME/.ssh/config ] || cp .ssh.config.example $HOME/.ssh/config
 
 # brew
-brew install wget ffmpeg nmap fzf ripgrep tmux hugo postgresql kubernetes-cli wrk telnet
+brew install wget ffmpeg nmap fzf ripgrep tmux hugo postgresql kubernetes-cli wrk telnet dive
 
 # pip
 # using --user tells pip to work on current user's local python package install
