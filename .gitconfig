@@ -44,3 +44,6 @@
     s = status
     br = branch
     cm = commit -m
+
+[init]
+	defaultBranch = main
