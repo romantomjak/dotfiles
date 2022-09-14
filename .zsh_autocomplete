@@ -57,7 +57,12 @@ if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-compl
     . /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
 fi
 
+# Kubernetes
 if [ -f /usr/local/bin/kubectl ]; then
     source <(kubectl completion zsh)
+    complete -o default -F __start_kubectl k
+elif [ -f /opt/homebrew/bin/kubectl ]; then
+    source <(kubectl completion zsh)
+    complete -o default -F __start_kubectl k
 fi
 

@@ -55,3 +55,7 @@ alias md5sum='md5'
 
 # Git-specific aliases are in ~/.gitconfig
 alias g=git
+
+# Kubernetes
+alias k=kubectl
+
