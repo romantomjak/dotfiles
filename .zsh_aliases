@@ -59,3 +59,7 @@ alias g=git
 # Kubernetes
 alias k=kubectl
 
+# Scan all TCP ports ports and be verbose about it
+# https://nmap.org/book/port-scanning-tutorial.html
+alias portscan='nmap -p0- -v -T4'
+
