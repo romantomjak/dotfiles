@@ -62,3 +62,9 @@ function __git-branch-name() {
         echo " ${COLOUR}(${BRANCH})%F{none}"
     fi
 }
+
+# Run a pod within a kubernetes namespace. If no argument is
+# provided it defaults to the 'default' namespace.
+function kalpinepod() {
+    kubectl run -it --rm --image=alpine --restart=Never alpine -n ${1:-default} -- /bin/sh
+}
