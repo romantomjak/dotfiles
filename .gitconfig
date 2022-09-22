@@ -36,14 +36,15 @@
 [alias]
     co = checkout
     cane = commit --amend --no-edit
-    pr = pull --rebase
+    pr = pull --prune --rebase
     p = push
-    po = push origin
+    po = "!zsh -c 'source ~/.zsh_functions && git push -u origin $(__git-branch-name)'"
     lo = log --oneline -n 10
     d = diff
     s = status
     br = branch
     cm = commit -m
+    mm = merge master
 
 [init]
 	defaultBranch = main
