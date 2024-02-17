@@ -35,16 +35,17 @@
 
 [alias]
     co = checkout
-    cane = commit --amend --no-edit
+    ca = commit --amend --no-edit
     pr = pull --prune --rebase
     p = push
     po = "!zsh -c 'source ~/.zsh_functions && git push -u origin $(__git-branch-name)'"
-    lo = log --oneline -n 10
+    l = log --oneline -n 10
     d = diff
     s = status
     br = branch
-    cm = commit -m
+    c = commit -m
     mm = merge master
+    a = "!git config --get-regexp ^alias. | sed 's/^alias.//'"
 
 [init]
 	defaultBranch = main
