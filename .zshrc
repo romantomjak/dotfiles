@@ -14,13 +14,14 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 # maximum number of events stored in the internal history list.
 # setting this value larger than the SAVEHIST will give you the
 # difference as a cushion for saving duplicated history events
-HISTSIZE=5500
+HISTSIZE=55000
 
 # maximum number of history events to save in the history file
-SAVEHIST=5000
+SAVEHIST=50000
 
-# append to history
-setopt APPEND_HISTORY
+# append to the history file immediately rather than waiting until
+# the shell exits and replacing history
+setopt INC_APPEND_HISTORY
 
 # expire duplicates first if the internal history needs to be
 # trimmed to add the current command
@@ -77,6 +78,7 @@ if [ -f $HOME/Library/Python/$PYTHON_VERSION/bin/virtualenvwrapper.sh ]; then
 fi
 
 # rust
+export CARGO_HOME="$HOME/.cargo"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # ruby
